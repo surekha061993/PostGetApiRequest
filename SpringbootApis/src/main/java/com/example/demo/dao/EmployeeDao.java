@@ -7,4 +7,6 @@ import com.example.demo.model.Employee;
 @Repository
 public interface EmployeeDao extends JpaRepository<Employee, Integer>{
 
+	public Employee findByName(String name);
+	
 }
